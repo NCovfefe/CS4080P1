@@ -7,7 +7,7 @@ using namespace std;
 
 
 //Matrix addition
-void add(float mat1[][100], float mat2[][100], int row, int col) {
+void add(float matA[][100], float matB[][100], int row, int col) {
 
 	//float matC[100][100] = {0}; //Create sum matrix
 	//If dimensions are not exact, return to menu
@@ -19,7 +19,7 @@ void add(float mat1[][100], float mat2[][100], int row, int col) {
 		matC[row][col];
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < col; j++) {
-				matC[i][j] = mat1[i][j] + mat2[i][j];
+				matC[i][j] = matA[i][j] + matB[i][j];
 			}
 		}
 	}
