@@ -2,7 +2,6 @@
 #include <string>
 #include <fstream>
 #include "StackDynamic.h"
-#include "p2p.h"
 
 using namespace std;
 
@@ -10,24 +9,12 @@ int rowsA, colsA, rowsB, colsB;
 float matA[100][100]; //Default matrixA 100x100
 float matB[100][100]; //Default matrixB 100x100
 float matC[100][100]; //Default operation output matrix 100x100
-float** ptrA;
-float** ptrB;
-float** ptrC;
-
-
 
 int main() {
 
 	int menuSelection = 0; //Selects operation to be performed
 	int matFill = 0; //Determines manual or file entry
-	
-	ptrA = new float* [100];
-	ptrB = new float* [100];
-	ptrC = new float* [100];
 
-	for (int i = 0; i < 100; i++) {
-		ptrC[i] = new float[100];
-	}
 	//Pick file or manual entry
 	cout << "Enter matrices by file or manually? (1 for file, 2 for manual) ";
 	cin >> matFill;

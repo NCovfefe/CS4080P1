@@ -139,17 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="PointerToPointer.cpp" />
     <ClCompile Include="Driver.cpp" />
     <ClCompile Include="StackDynamic.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="matrixA.txt" />
     <Text Include="matrixB.txt" />
+    <Text Include="SameMat.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StackDynamic.h" />
-    <ClInclude Include="p2p.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
