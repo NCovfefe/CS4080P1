@@ -146,6 +146,8 @@
     <Text Include="matrixA.txt" />
     <Text Include="matrixB.txt" />
     <Text Include="SameMat.txt" />
+    <Text Include="rand1.txt" />
+    <Text Include="rand2.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StackDynamic.h" />
